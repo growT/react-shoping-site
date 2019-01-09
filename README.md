@@ -21,6 +21,8 @@
 - [x] 个人中心 -- 用户个人中心
 
 ### 项目结构
+
+```
 my-app
 ├── README.md
 ├── node_modules
@@ -38,3 +40,4 @@ my-app
     ├── index.js
     ├── logo.svg
     └── serviceWorker.js
+```
