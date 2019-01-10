@@ -24,20 +24,23 @@
 
 ```
 my-app
-├── README.md
-├── node_modules
-├── package.json
-├── .gitignore
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── manifest.json
-└── src
-    ├── App.css
-    ├── App.js
-    ├── App.test.js
-    ├── index.css
-    ├── index.js
-    ├── logo.svg
-    └── serviceWorker.js
+|-- README.md
+|-- node_modules
+|-- package.json
+|-- .gitignore
+|-- public
+|   |-- favicon.ico
+|   |-- index.html
+|   |-- manifest.json
+|-- src
+    |-- index.css : 公共的css
+    |-- index.js : 入口文件
+    |-- serviceWorker.js
+    |-- assets : 静态资源
+    |-- components ：公共的组件
+    |-- pages : 单独的页面
+    |-- router ：路由
+    |-- store ：redux状态管理
+    |-- utils ：工具包
+    |-- server ：后台请求接口
 ```
