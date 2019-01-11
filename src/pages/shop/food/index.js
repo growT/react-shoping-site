@@ -4,7 +4,7 @@ import './index.css'
 class Food extends Component{
     render(){
         return (
-            <div>这是个人中心</div>
+            <div>这是food</div>
         )
     }
 }

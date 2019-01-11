@@ -4,7 +4,7 @@ import './index.css'
 class ShopDetail extends Component{
     render(){
         return (
-            <div>这是个人中心</div>
+            <div>这是shopDetail</div>
         )
     }
 }

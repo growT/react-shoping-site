@@ -4,7 +4,10 @@ import './index.css'
 class Shop extends Component{
     render(){
         return (
-            <div>这是个人中心</div>
+            <div>
+                <div>这是shop</div>
+                {this.props.children}
+            </div>
         )
     }
 }
