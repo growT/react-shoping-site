@@ -1,0 +1,16 @@
+.header {
+  font-size: 16px;
+  height: 40px;
+  color: #333;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .back_icon {
+  position: absolute;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  padding: 10px;
+}
