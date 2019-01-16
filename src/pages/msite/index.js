@@ -5,6 +5,8 @@ import './index.css'
 import location_icon from '../../assets/location_icon.png'
 import arrow_right from '../../assets/arrow_right01.png'
 
+import Shops from '../shops'
+
 
 class msite extends Component {
     state = {
@@ -51,6 +53,7 @@ class msite extends Component {
                     }</div>
                     <div className="shop-list">
                         <div className="shop-list-title">附近商家</div>
+                        <Shops />
                     </div>
                 </div>
             </div>

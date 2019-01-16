@@ -1,3 +1,6 @@
+.msite {
+  padding-top: 40px;
+}
 .msite .head-title {
   background-color: #1C1B20;
   font-size: 16px;
@@ -69,6 +72,9 @@
   height: 44px;
   margin-top: 15px;
   margin-bottom: 5px;
+}
+.msite .shop-list {
+  padding-bottom: 30px;
 }
 .msite .shop-list .shop-list-title {
   font-size: 17px;

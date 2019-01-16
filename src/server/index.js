@@ -1,14 +1,15 @@
 import axios from 'axios';
+import qs from 'qs';
 
-axios.defaults.baseURL = 'http://i.waimai.meituan.com/'
+axios.defaults.baseURL = 'https://www.easy-mock.com/mock/5c3eab8177961b2d18d7ff96/shopsite'
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
 
-function axios_post(url,params) {
-    axios.post(url, params)
+const axios_post = (url,params) => {
+    return axios.post(url, qs.stringify(params))
 }
-function axios_get(url, params = {}) {
-    axios.get(url, {params})
+const axios_get = (url, params = {}) => {
+    return axios.get(url, {params})
 }
-export function getShopList(params) {
-    return axios_post('/openh5/homepage/poilist?_=1547451420594', params);
+export const getShopList = (params)=> {
+    return axios_get('/shoplist', params);
 }

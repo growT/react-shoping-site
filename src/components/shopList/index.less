@@ -1,3 +1,64 @@
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
 .shop-list {
     background-color: #fff;
+    .shop-item {
+        display: flex;
+       
+        padding: 10px 10px 25px;
+        .item-left{
+            position: relative;
+            width: 76px;
+            margin-right: 8px;
+            .shop-pic {
+                width: 100%;
+                height: 57px;
+                border: 1px solid #e4e4e4;
+            }
+            .brand-pic {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 26px;
+                height: 13px;
+            }
+        }
+        .item-right {
+            flex: 1;
+            font-size: 12px;
+            .shop-name {
+                font-size: 16px;
+            }
+            .shop-score {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 4px;
+            }
+            .send {
+                margin-top: 4px;
+            }
+            .dazhong {
+                margin-top: 10px;
+                border: 1px solid #e4e4e4;
+                display: inline-block;
+                .recommendInfo-icon {
+                    width: 15px;
+                    height: 15px;
+                    vertical-align: middle;
+                    margin-left: 2px;
+                }
+            }
+            .discount-item {
+                margin-top: 8px;
+                .flex-align-center;
+                .discount-pic {
+                    margin-right: 5px;
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
 }

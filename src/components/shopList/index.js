@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom';
 import './index.css'
 
 class ShopList extends Component{
@@ -6,14 +7,16 @@ class ShopList extends Component{
         return ( 
             <div className="shop-list">
                {
-                    this.props.shopList.map(item => (
-                      <div className="shop-item">
+                    this.props.shopList.map((item,index) => (
+                      <Link className="shop-item" key={index} to="/menu">
                         <div className="item-left">
                             <img src={item.picUrl} alt="shop-pic" className="shop-pic"/>
                             <img src={item.poiTypeIcon} alt="brand-pic" className="brand-pic"/>
                         </div>
                         <div className="item-right">
-                            <p className="shop-name">{item.shopName}</p>
+                            <p className="shop-name">
+                                {item.shopName}
+                            </p>
                             <p className="shop-score">
                                 <span>{item.wmPoiScore/10}</span>
                                 <span>{item.deliveryTimeTip}|{item.distance}</span>
@@ -30,15 +33,15 @@ class ShopList extends Component{
                                 )
                             }
                             {
-                                item.discounts2 && item.discounts2.map(disItem=> (
-                                    <p className="discount-item">
+                                item.discounts2 && item.discounts2.map((disItem,disIndex)=> (
+                                    <p className="discount-item" key={'dis' + disIndex}>
                                         <img src={disItem.iconUrl} alt="discount-pic" className="discount-pic"/>
                                         {disItem.info}
                                     </p>
                                 ))
                             }
                         </div>
-                      </div>  
+                      </Link>  
                     ))
                }
             </div> 

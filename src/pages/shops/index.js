@@ -14,7 +14,7 @@ class Shops extends Component{
         this.getShopList();
     }
     getShopList() {
-        getShopList({
+       getShopList({
             startIndex: 0,
             sortId: 0,
             multiFilterIds: "",
@@ -28,8 +28,9 @@ class Shops extends Component{
             wm_actual_latitude: 32070754,
             wm_actual_longitude: 118753805,
             _token: "",
-        }).then(res => {
-            if(res.data.code === '0') {
+        })
+        .then(res => {
+            if(res.data.code === 0) {
                 this.setState({"shopList": res.data.data.shopList})
             } else {
                 this.setState({"shopList": []})
