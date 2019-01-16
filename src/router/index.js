@@ -11,12 +11,9 @@ const Profile = asyncComponent(()=> import("../pages/profile"))
 const Search = asyncComponent(()=> import("../pages/search"))
 const SearchResult = asyncComponent(()=> import("../pages/searchResult"))
 
-const Shop = asyncComponent(()=> import("../pages/shop"))
-const Evaluate = asyncComponent(()=> import("../pages/shop/evaluate"))
-const Food = asyncComponent(()=> import("../pages/shop/food"))
-const ShopDetail = asyncComponent(()=> import("../pages/shop/shopDetail"))
+const Menu = asyncComponent(()=> import("../pages/Menu"))
 
-const ShopList = asyncComponent(()=> import("../pages/shopList"))
+const Shops = asyncComponent(()=> import("../pages/shops"))
 
 class routerConfig extends Component {
     render() {
@@ -24,22 +21,21 @@ class routerConfig extends Component {
             <HashRouter>
                 <div>
                    {/* 这里子路由可以直接写，不用嵌套 */}
-                    <Route path="/" exact component={Home}></Route>
-                    <Route path="/msite" component={Msite}></Route>
-                    <Route path="/order" component={Order}></Route>
-                    <Route path="/profile" component={Profile}></Route>
+                    
+                    <Route path="/main" component={Home}></Route>
+                    <Route path="/main/msite" component={Msite}></Route>
+                    <Route path="/main/order" component={Order}></Route>
+                    <Route path="/main/profile" component={Profile}></Route>
 
                     <Route path="/search" component={Search}></Route>
                     <Route path="/searchResult" component={SearchResult}></Route>
 
-                    <Route  path="/shop" component={Shop}></Route>
-                    <Route path="/shop/evaluate" component={Evaluate}></Route>
-                    <Route path="/shop/food" component={Food}></Route>
-                    <Route path="/shop/shopDetail" component={ShopDetail}></Route>
+                    <Route path="/menu" component={Menu}></Route>
                     
+                    <Route path="/shops" component={Shops}></Route>
 
-                    <Route path="/shopList" component={ShopList}></Route>
-                       
+                    {/* <Redirect from="/" exact to="/main/msite"></Redirect> */}
+                    {/*路由还是有些问题 设置/的时候会出现问题 */}
                 </div>
             </HashRouter>
         )

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './index.css'
 
-import back_icon from '../../assets/返回.png'
+import back_icon from '../../assets/arrow_left.png'
 class header extends Component {
     // constructor() {
     //     this.state = {

@@ -1,0 +1,28 @@
+.search-bar {
+  height: 40px;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+.search-bar ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.search-bar ul li {
+  flex: 1;
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.search-bar ul li .arrow-bottom {
+  width: 10px;
+  height: 10px;
+}
+.search-bar ul li .filter-icon {
+  width: 15px;
+  height: 15px;
+}
