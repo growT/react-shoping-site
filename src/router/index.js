@@ -30,7 +30,7 @@ class routerConfig extends Component {
                     <Route path="/search" component={Search}></Route>
                     <Route path="/searchResult" component={SearchResult}></Route>
 
-                    <Route path="/menu" component={Menu}></Route>
+                    <Route path="/menu/:shopId" component={Menu}></Route>
                     
                     <Route path="/shops" component={Shops}></Route>
 

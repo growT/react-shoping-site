@@ -8,7 +8,7 @@ class ShopList extends Component{
             <div className="shop-list">
                {
                     this.props.shopList.map((item,index) => (
-                      <Link className="shop-item" key={index} to="/menu">
+                      <Link className="shop-item" key={index} to={'/menu/' + item.mtWmPoiId}>
                         <div className="item-left">
                             <img src={item.picUrl} alt="shop-pic" className="shop-pic"/>
                             <img src={item.poiTypeIcon} alt="brand-pic" className="brand-pic"/>

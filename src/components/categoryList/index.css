@@ -1,0 +1,101 @@
+.category-list {
+  display: flex;
+  overflow: hidden;
+}
+.category-list .item-left {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  background-color: #f5f5f5;
+  overflow-y: scroll;
+}
+.category-list .item-left ul li {
+  min-height: 49px;
+  padding: 9px 10px 22px;
+}
+.category-list .item-left .active {
+  background-color: #fff;
+  color: #333333;
+  font-weight: bold;
+}
+.category-list .item-right {
+  margin-left: 80px;
+  flex: 1;
+  background-color: #fff;
+  overflow-y: scroll;
+  padding: 0 10px;
+}
+.category-list .item-right .category-name {
+  height: 36px;
+}
+.category-list .item-right ul li {
+  display: flex;
+  padding-bottom: 22px;
+}
+.category-list .item-right ul li .left {
+  width: 75px;
+  height: 75px;
+}
+.category-list .item-right ul li .left .food-icon {
+  height: 100%;
+  object-fit: cover;
+}
+.category-list .item-right ul li .right {
+  flex: 1;
+  padding-left: 10px;
+  min-width: 0;
+}
+.category-list .item-right ul li .right .spu-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.category-list .item-right ul li .right .sup-desc {
+  margin-bottom: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+  color: #666666;
+  word-break: break-all;
+}
+.category-list .item-right ul li .right .price {
+  color: #fb4e44;
+  display: flex;
+  justify-content: space-between;
+}
+.category-list .item-right ul li .right .price .money-sign {
+  font-size: 18px;
+  margin-right: 5px;
+}
+.category-list .item-right ul li .right .price .unit {
+  color: #999;
+  font-size: 12px;
+}
+.category-list .item-right ul li .right .price .org-price {
+  margin-left: 4px;
+  font-size: 11px;
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+.category-list .item-right ul li .right .price .opt-cart {
+  display: flex;
+  align-items: center;
+}
+.category-list .item-right ul li .right .price .opt-cart .minus-icon {
+  width: 25px;
+  height: 25px;
+}
+.category-list .item-right ul li .right .price .opt-cart .count {
+  padding: 0 5px;
+}
+.category-list .item-right ul li .right .price .opt-cart .add-icon {
+  width: 25px;
+  height: 25px;
+}

@@ -28,3 +28,9 @@ p {
   margin: 0;
   padding: 0;
 }
+
+body::-webkit-scrollbar,
+html::-webkit-scrollbar{
+  width:0px;
+  /* display: none; */
+}

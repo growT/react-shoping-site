@@ -13,3 +13,6 @@ const axios_get = (url, params = {}) => {
 export const getShopList = (params)=> {
     return axios_get('/shoplist', params);
 }
+export const getShopDetail = (params)=> {
+    return axios_get('/shopdetai', params);
+}

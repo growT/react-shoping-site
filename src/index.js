@@ -4,12 +4,16 @@ import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Route from './router'
+import store from './store'
+import {Provider} from 'react-redux'
 
 // ReactDOM.render(<App />, document.getElementById('root')); 
 // 使用了router之后，入口需要渲染的是router而不是 App组件了
 var render = (Componet) => {
     ReactDOM.render(
-        <Componet />, 
+        <Provider store={store}>
+            <Componet />
+        </Provider>, 
         document.getElementById('root')
     )
 }
