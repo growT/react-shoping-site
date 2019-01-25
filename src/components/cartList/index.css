@@ -1,0 +1,43 @@
+.cart-list .cart-title {
+  height: 30px;
+  padding: 4px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-list .cart-title .move_icon {
+  width: 13px;
+  height: 15px;
+  margin-right: 6px;
+}
+.cart-list .cart-item {
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid #E4E4E4;
+}
+.cart-list .cart-item .food-name {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+.cart-list .cart-item .food-price {
+  margin: 0 25px;
+  color: #FB4E44;
+  min-width: 36px;
+}
+.cart-list .cart-item .opt-cart {
+  display: flex;
+  align-items: center;
+  min-width: 82px;
+}
+.cart-list .cart-item .opt-cart .minus-icon {
+  width: 25px;
+  height: 25px;
+}
+.cart-list .cart-item .opt-cart .count {
+  padding: 0 5px;
+}
+.cart-list .cart-item .opt-cart .add-icon {
+  width: 25px;
+  height: 25px;
+}

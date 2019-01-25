@@ -1,3 +1,78 @@
-.order-page {
+.food {
   color: #333;
+}
+.food .cart-modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  transition: bottom 1s top 1s;
+}
+.food .mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.food .move-in {
+  bottom: auto;
+  top: calc(100% - 50px);
+  top: -moz-calc(100% - 50px);
+  top: -webkit-calc(100% - 50px);
+}
+.food .move-out {
+  bottom: 50px;
+  top: auto;
+}
+.food .food-cart {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #999;
+  background-color: #3b3b3c;
+}
+.food .food-cart .cart {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -10px;
+  margin: 0 10px;
+}
+.food .food-cart .cart .tips {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #FB4E44;
+  border-radius: 50%;
+  line-height: 15px;
+  font-size: 11px;
+  padding: 0 5px;
+  color: #fff;
+}
+.food .food-cart .price {
+  flex: 1;
+  font-size: 14px;
+}
+.food .food-cart .price .total-price {
+  font-size: 24px;
+  color: #fff;
+  margin-right: 5px;
+}
+.food .food-cart .price .org-total-price {
+  text-decoration: line-through;
+  font-size: 12px;
+}
+.food .food-cart .pay {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 18px;
+  height: 50px;
+  line-height: 50px;
 }
