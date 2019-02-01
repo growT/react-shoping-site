@@ -57,7 +57,7 @@ class Food extends Component{
                 {/* 购物车 */}
                 {
                     this.state.isMoveCart && this.state.isShowCart  && (
-                        <div className="mask"></div>
+                        <div className="mask" onClick={this.cartClick}></div>
                     )
                 }
                 <div className={this.state.isMoveCart && this.state.isShowCart ? ' cart-modal move-out': 'cart-modal move-in'}>

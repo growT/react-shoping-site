@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { is, fromJS } from 'immutable';  // 保证数据的不可变
 import './index.css'
 
 import add_icon from '../../assets/add_icon.png'
@@ -9,6 +10,7 @@ class CategoryList extends Component {
         super();
         this.navClick = this.navClick.bind(this);
         this.filterCartList = this.filterCartList.bind(this);
+        this.rightScroll = this.rightScroll.bind(this);
     }
     state = {
       rightHeightList :[],
@@ -25,10 +27,14 @@ class CategoryList extends Component {
             this.rightHeightList.push(element.offsetHeight * index)
         });
         console.log(this.rightHeightList)
+        window.addEventListener("scroll",this.rightScroll)
     }
     componentDidUpdate() {
         console.log('jjj');
     }
+    shouldComponentUpdate(nextProps, nextState) {   // 判断是否要更新render, return true 更新  return false不更新
+        return !is(fromJS(this.props), fromJS(nextProps)) || !is(fromJS(this.state),fromJS(nextState))
+      }
     /**
      * @Description: 点击左侧，右侧滚动
      * @param {type} 
@@ -44,6 +50,9 @@ class CategoryList extends Component {
             return food[0].count
         }
         return null;
+    }
+    rightScroll(e) {
+        console.log(e);
     }
     render() {
         let leftList = [];
